@@ -19,6 +19,10 @@ This LLM implementation is based on a custom-built GPT-style transformer, traine
 - 💬 **Interactive Chainlit UI** for running the model in a ChatGPT-style interface.
 - ⚙️ **Model loading utilities** for inference using your own `.pth` weights.
 
+### UI Demo
+
+![demo](llm-ui.png)
+
 ---
 
 ## 📁 Repository Structure
