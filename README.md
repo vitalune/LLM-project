@@ -57,9 +57,10 @@ The goal of this project is to understand and implement all major components of 
 ---
 
 ## 📈 Training and Evaluation
-	•	Training loss and validation loss are computed via cross-entropy, comparing predicted token distributions to actual next tokens.
-	•	The project tracks loss over time to monitor generalization and overfitting.
-	•	Later-stage evaluation is done using instruction-based prompts and judged with LLaMA 3.2B, though stronger models (e.g. OpenChat or Mistral) are recommended for more reliable scoring.
+
+* Training loss and validation loss are computed via cross-entropy, comparing predicted token distributions to actual next tokens.
+* The project tracks loss over time to monitor generalization and overfitting.
+* Later-stage evaluation is done using instruction-based prompts and judged with LLaMA 3.2B, though stronger models (e.g. OpenChat or Mistral) will be used for future, bigger models for more reliable scoring.
 
 ---
 
