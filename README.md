@@ -17,7 +17,7 @@ This LLM implementation is based on a custom-built GPT-style transformer, traine
 - **Finetuning on instruction-following data**, resulting in the checkpoint `gpt2-medium355M-sft.pth` (not pushed due to GitHub size limits).
 - **Training and validation loss tracking** to monitor performance and generalization.
 - **Interactive Chainlit UI** for running the model in a ChatGPT-style interface.
-- **Model loading utilities** for inference using your own `.pth` weights.
+- **Model loading utilities** for inference using my own `.pth` weights.
 
 ### UI Demo
 
