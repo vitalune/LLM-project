@@ -22,24 +22,24 @@ This LLM implementation is based on a custom-built GPT-style transformer, traine
 ---
 
 ## 📁 Repository Structure
-LLM-project/
-├── chapter02/         # Text preprocessing, tokenization, and embeddings
-├── chapter03/         # Attention mechanisms and decoder-only transformer blocks
-├── chapter04/         # Full GPT-style model implementation (pre-training setup)
-├── chapter05/         # Pretraining with cross-entropy loss, loss tracking
-├── finetuning/        # Supervised finetuning for text classification
-├── instructions/
-│   ├── instructions.ipynb  # Instruction-tuned finetuning (e.g., Alpaca-style)
-│   └── evaluation.ipynb    # LLaMA-3.2B-based evaluation of outputs
-├── ui/                # Chainlit-based local chat interface
-│   ├── app.py
-│   └── model/         # Contains GPTModel, generate(), tokenizer utils, config
-│       ├── gpt_model.py
-│       ├── generate.py
-│       ├── tokenizer_utils.py
-│       └── model_config.py
-├── gpt2-medium355M-sft.pth  # Finetuned model weights (not pushed to GitHub)
-└── README.md
+
+	LLM-project/
+ 		preprocessing/
+   		attention/
+     	generation/
+       	training/
+	 	finetuning/
+   		instructions/
+     		instructions.ipynb # instruction-tuned Alpaca-style finetuning
+			evaluation.ipynb # LLaMa-3.2B-based evaluation of model outputs
+   		ui/
+     		app.py
+			model/
+   				generate.py
+       			gpt.py
+	   			model_config.py
+       			tokenizer_utils.py
+	   			
 ---
 
 ## 💡 Project Summary
@@ -57,9 +57,10 @@ The goal of this project is to understand and implement all major components of 
 ---
 
 ## 📈 Training and Evaluation
-	•	Training loss and validation loss are computed via cross-entropy, comparing predicted token distributions to actual next tokens.
-	•	The project tracks loss over time to monitor generalization and overfitting.
-	•	Later-stage evaluation is done using instruction-based prompts and judged with LLaMA 3.2B, though stronger models (e.g. OpenChat or Mistral) are recommended for more reliable scoring.
+
+* Training loss and validation loss are computed via cross-entropy, comparing predicted token distributions to actual next tokens.
+* The project tracks loss over time to monitor generalization and overfitting.
+* Later-stage evaluation is done using instruction-based prompts and judged with LLaMA 3.2B, though stronger models (e.g. OpenChat or Mistral) will be used for future, bigger models for more reliable scoring.
 
 ---
 
