@@ -12,12 +12,12 @@ The project is organized into chapters, each corresponding to a Jupyter Notebook
 
 This LLM implementation is based on a custom-built GPT-style transformer, trained and fine-tuned using PyTorch. My version includes:
 
-- 🧱 **Custom model architecture** (`GPTModel`) with positional and token embeddings, transformer decoder blocks, and a causal attention mechanism.
-- 📜 **Tokenizer integration** using `tiktoken`, with support for converting between text and token IDs.
-- 🧠 **Finetuning on instruction-following data**, resulting in the checkpoint `gpt2-medium355M-sft.pth` (not pushed due to GitHub size limits).
-- 🧪 **Training and validation loss tracking** to monitor performance and generalization.
-- 💬 **Interactive Chainlit UI** for running the model in a ChatGPT-style interface.
-- ⚙️ **Model loading utilities** for inference using your own `.pth` weights.
+- **Custom model architecture** (`GPTModel`) with positional and token embeddings, transformer decoder blocks, and a causal attention mechanism.
+- **Tokenizer integration** using `tiktoken`, with support for converting between text and token IDs.
+- **Finetuning on instruction-following data**, resulting in the checkpoint `gpt2-medium355M-sft.pth` (not pushed due to GitHub size limits).
+- **Training and validation loss tracking** to monitor performance and generalization.
+- **Interactive Chainlit UI** for running the model in a ChatGPT-style interface.
+- **Model loading utilities** for inference using your own `.pth` weights.
 
 ### UI Demo
 
@@ -46,21 +46,21 @@ This LLM implementation is based on a custom-built GPT-style transformer, traine
 	   			
 ---
 
-## 💡 Project Summary
+## Project Summary
 
 The goal of this project is to understand and implement all major components of a transformer-based language model. From raw text preprocessing to training on unlabeled data, and ultimately instruction-tuning, this repo captures the full LLM development pipeline.
 
 ### Key Accomplishments
 
-- 🧱 Implemented a full decoder-only GPT architecture
-- 📊 Trained and validated the model using cross-entropy loss
-- 📎 Fine-tuned on supervised and instruction-following datasets
-- 💬 Deployed a real-time chat interface using Chainlit
-- 🔍 Evaluated outputs using LLaMA 3.2B and discussed limitations
+- Implemented a full decoder-only GPT architecture
+- Trained and validated the model using cross-entropy loss
+- Fine-tuned on supervised and instruction-following datasets
+- Deployed a real-time chat interface using Chainlit
+- Evaluated outputs using LLaMA 3.2B and discussed limitations
 
 ---
 
-## 📈 Training and Evaluation
+## Training and Evaluation
 
 * Training loss and validation loss are computed via cross-entropy, comparing predicted token distributions to actual next tokens.
 * The project tracks loss over time to monitor generalization and overfitting.
